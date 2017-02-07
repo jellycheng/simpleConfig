@@ -1,0 +1,25 @@
+{
+  "name": "cjs/simpleconfig",
+  "description": "The cjs simple config package.",
+  "license": "MIT",
+  "homepage": "http://www.qianguopai.com",
+  "authors": [
+    {
+      "name": "jelly",
+      "email": "42282367@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "classmap": [
+
+    ],
+    "files": [
+    ],
+    "psr-4": {
+      "SimpleConfig\\": "src/"
+    }
+  }
+}
