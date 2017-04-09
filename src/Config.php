@@ -69,7 +69,7 @@ class Config implements ArrayAccess {
         }
         $array[array_shift($keys)] = $value;
         self::$configData = array_replace_recursive(self::$configData, $config);
-        return self::$configData;
+        return $this;
     }
 
     public function has($key)
@@ -112,7 +112,7 @@ class Config implements ArrayAccess {
             $array =& $original;
         }
         self::$configData = $array;
-
+        return $this;
     }
 
     public function offsetExists($offset)
